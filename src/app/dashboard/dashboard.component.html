@@ -1,7 +1,7 @@
 <nav class="nav justify-content-center fixed-top">
-  <a class="nav-link active" href="#">Campaigns</a>
-  <a class="nav-link" href="#">Rankings</a>
-  <a class="nav-link" href="#">Analytics</a>
+  <a [routerLink]="['/dashboard/campaigns']" [routerLinkActive]="'active'" class="nav-link">Campaigns</a>
+  <a [routerLink]="['/dashboard/rankings']" [routerLinkActive]="'active'" class="nav-link">Rankings</a>
+  <a [routerLink]="['/dashboard/analytics']" [routerLinkActive]="'active'" class="nav-link">Analytics</a>
   <a class="nav-link disabled" href="#">Disabled</a>
 </nav>
 
