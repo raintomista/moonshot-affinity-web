@@ -12,6 +12,7 @@ import { RankingsComponent } from './rankings/rankings.component';
 import { AdminDashboardComponent } from './admin-dashboard/admin-dashboard.component';
 import { AdminTrainComponent } from './admin-train/admin-train.component';
 import { FileDropModule } from 'ngx-file-drop';
+import { AdminAnalyzeComponent } from './admin-analyze/admin-analyze.component';
 
 
 @NgModule({
@@ -24,6 +25,7 @@ import { FileDropModule } from 'ngx-file-drop';
     RankingsComponent,
     AdminDashboardComponent,
     AdminTrainComponent,
+    AdminAnalyzeComponent,
   ],
   imports: [
     BrowserModule,

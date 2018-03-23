@@ -1,0 +1,151 @@
+h4{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.6em;
+    font-weight: 600;
+    color: black;
+    margin-bottom: 20px;
+}
+
+.row{
+    margin-bottom: 20px;
+}
+
+.card{
+    border-radius: 0px;
+    padding: 10px;
+}
+
+.card-title{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.2em;
+    font-weight: 600;
+    color: #3A3E41;
+}
+
+.card-body{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 0.96em;
+    color: #72757C;
+}
+
+.btn-primary{
+    /* background-color: #09F3B1; */
+    background: linear-gradient(to right, #009FF7, #1AD7CC);
+    border: none;
+    border-radius: 6px;
+    padding: 15px 50px;
+    text-transform: uppercase;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    font-size: 13px;
+}
+
+.btn-secondary{
+    margin-left: 10px;
+    background-color: transparent;
+    border: 1.8px solid gray;
+    color: gray;
+    box-sizing: border-box;
+    border-radius: 6px;
+    padding: 15px 50px;
+    text-transform: uppercase;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    font-size: 13px;
+}
+
+.user-value{
+    height: 41px;
+}
+
+.count{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600; 
+    font-size: 30px;
+    color: black;
+    line-height: 41px;    
+    vertical-align: middle;
+}
+
+.label{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 41px;    
+    vertical-align: middle;
+}
+
+.avatar{
+    border-radius: 100%;
+    float: left;
+    margin-right: 25px;
+}
+
+.user-name{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 25px;
+    font-weight: 600; 
+}
+
+.user-location{
+    height: 20px;
+}
+
+.user-location *{
+    line-height: 20px;
+    vertical-align: middle;
+    display: inline-block;
+}
+
+.user-location > span{
+    margin-top: -7px;
+    margin-left: 5px;
+}
+
+.card.top-tweets .card-body{
+    padding-bottom: 10px;
+}
+
+.card.top-tweets .card-title{
+    margin: 0px;
+}
+
+.tweet-img{
+    border-radius: 100%;
+    float: left;
+    margin-right: 10px;
+    height: 50px;
+}
+
+.tweet-user{
+    margin: 0px;
+}
+
+.tweet-date{
+    float: right;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 12px;
+}
+
+.user-name{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 25px;
+    font-weight: 600; 
+}
+
+.tweet-ctrls{
+    font-size: 16px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600; 
+    margin-left: 65px;
+    margin-top: -10px;
+}
+.tweet-ctrls .fave {
+    color: rgb(185, 41, 41);
+    margin-right: 10px;
+}
+
+
+.tweet-ctrls .rts {
+    color: rgb(30, 168, 53);
+}
