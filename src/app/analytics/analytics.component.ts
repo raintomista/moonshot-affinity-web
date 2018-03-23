@@ -21,15 +21,32 @@ export class AnalyticsComponent implements OnInit {
     const element = this.el.nativeElement;
 
     const style = {
-        margin : {
-          t : 0
-        }
+      autosize: true,
+      width: 500,
+      height: 200,
+      margin: {
+        l: 0,
+        r: 0,
+        b: 0,
+        t: 0,
+      }
     };
 
-    const data = [{
-      x: [1, 2, 3, 4, 5],
-      y: [1, 2, 4, 8, 16]
-    }]
+    const trace1: Partial<Plotly.ScatterData> = {
+      x: [2, 3, 4, 5],
+      y: [16, 5, 11, 9],
+      mode: 'lines+markers',
+      marker: {
+        color: '#1AD7CC',
+        size: 10
+      },
+      line: {
+        color: '#1AD7CC',
+        width: 2
+      }
+    };
+
+    const data = [trace1];
 
     Plotly.plot(element, data, style);
 

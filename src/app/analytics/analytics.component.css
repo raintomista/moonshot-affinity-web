@@ -1,0 +1,29 @@
+h4{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.6em;
+    font-weight: 600;
+    color: black;
+    margin-bottom: 20px;
+}
+
+.row{
+    margin-bottom: 20px;
+}
+
+.card{
+    border-radius: 0px;
+    padding: 10px;
+}
+
+.card-title{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.3em;
+    font-weight: 600;
+    color: #3A3E41;
+}
+
+.card-body{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 0.96em;
+    color: #72757C;
+}
