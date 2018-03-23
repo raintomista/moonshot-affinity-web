@@ -7,6 +7,8 @@ import { AnalyticsComponent } from './analytics/analytics.component';
 import { RankingsComponent } from './rankings/rankings.component';
 import { AdminDashboardComponent } from './admin-dashboard/admin-dashboard.component';
 import { AdminTrainComponent } from './admin-train/admin-train.component';
+import { AnalyzeComponent } from './analyze/analyze.component';
+import { FindComponent } from './find/find.component';
 
 const routes: Routes = [
   { path: '', redirectTo: 'dashboard', pathMatch: 'full' },
@@ -25,8 +27,8 @@ const routes: Routes = [
     children: [
       { path: '', redirectTo: 'train', pathMatch: 'full' },
       { path: 'train', component: AdminTrainComponent },
-      { path: 'find', component: AnalyticsComponent },
-      { path: 'analyze', component: RankingsComponent },
+      { path: 'find', component: FindComponent },
+      { path: 'analyze', component: AnalyzeComponent },
     ]
   }
 
