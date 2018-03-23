@@ -6,6 +6,7 @@ import { CampaignsComponent } from './campaigns/campaigns.component';
 import { AnalyticsComponent } from './analytics/analytics.component';
 import { RankingsComponent } from './rankings/rankings.component';
 import { AdminDashboardComponent } from './admin-dashboard/admin-dashboard.component';
+import { AdminTrainComponent } from './admin-train/admin-train.component';
 
 const routes: Routes = [
   { path: '', redirectTo: 'dashboard', pathMatch: 'full' },
@@ -23,7 +24,7 @@ const routes: Routes = [
     path: 'admin-dashboard', component: AdminDashboardComponent,
     children: [
       { path: '', redirectTo: 'train', pathMatch: 'full' },
-      { path: 'train', component: CampaignsComponent },
+      { path: 'train', component: AdminTrainComponent },
       { path: 'find', component: AnalyticsComponent },
       { path: 'analyze', component: RankingsComponent },
     ]

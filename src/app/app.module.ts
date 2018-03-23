@@ -10,6 +10,8 @@ import { BsDropdownModule } from 'ngx-bootstrap/dropdown';
 import { AnalyticsComponent } from './analytics/analytics.component';
 import { RankingsComponent } from './rankings/rankings.component';
 import { AdminDashboardComponent } from './admin-dashboard/admin-dashboard.component';
+import { AdminTrainComponent } from './admin-train/admin-train.component';
+import { FileDropModule } from 'ngx-file-drop';
 
 
 @NgModule({
@@ -20,11 +22,13 @@ import { AdminDashboardComponent } from './admin-dashboard/admin-dashboard.compo
     CampaignsComponent,
     AnalyticsComponent,
     RankingsComponent,
-    AdminDashboardComponent
+    AdminDashboardComponent,
+    AdminTrainComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
+    FileDropModule,
     BsDropdownModule.forRoot()
   ],
   providers: [],
