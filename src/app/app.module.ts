@@ -7,6 +7,8 @@ import { InvitationLoginComponent } from './invitation-login/invitation-login.co
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { CampaignsComponent } from './campaigns/campaigns.component';
 import { BsDropdownModule } from 'ngx-bootstrap/dropdown';
+import { AnalyticsComponent } from './analytics/analytics.component';
+import { RankingsComponent } from './rankings/rankings.component';
 
 
 @NgModule({
@@ -14,7 +16,9 @@ import { BsDropdownModule } from 'ngx-bootstrap/dropdown';
     AppComponent,
     InvitationLoginComponent,
     DashboardComponent,
-    CampaignsComponent
+    CampaignsComponent,
+    AnalyticsComponent,
+    RankingsComponent
   ],
   imports: [
     BrowserModule,
