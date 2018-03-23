@@ -17,6 +17,7 @@ import { FileDropModule } from 'ngx-file-drop';
 import { AnalyzeComponent } from './analyze/analyze.component';
 import { FindComponent } from './find/find.component';
 import { AdminService } from './admin.service';
+import { AdminAnalyzeComponent } from './admin-analyze/admin-analyze.component';
 
 
 @NgModule({
@@ -31,6 +32,7 @@ import { AdminService } from './admin.service';
     AdminTrainComponent,
     AnalyzeComponent,
     FindComponent,
+    AdminAnalyzeComponent,
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,174 @@
+<div class="page-container">
+  <h4>Analyze</h4>
+  <div class="row">
+    <div class="col-sm-6">
+      <div class="card">
+        <div class="card-body">
+          <img src="assets/user.jpg" alt="" class="avatar">
+          <h5 class="card-title user-name">Ken Mercado (@haxx0r)</h5>
+          <p class="card-text user-info">We're passionate about making a difference in your skin</p>
+          <p class="card-text user-location">
+            <i class="dripicons-location"></i>
+            <span>Los Banos</span>
+          </p>
+
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-6">
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">Twitter User Metrics</h5>
+          <div class="user-value">
+            <span class="count">1,425&nbsp;</span>
+            <span class="label">retweets sent</span>
+          </div>
+          <div class="user-value">
+            <span class="count">643,199&nbsp;</span>
+            <span class="label">retweets received</span>
+          </div>
+          <div class="user-value">
+            <span class="count">9,845&nbsp;</span>
+            <span class="label">mentions sent</span>
+          </div>
+          <div class="user-value">
+            <span class="count">44,000&nbsp;</span>
+            <span class="label">mentions received</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-sm-6" style="margin-top: -70px;">
+      <div class="card top-tweets">
+        <div class="card-body">
+          <h5 class="card-title">Top 5 Tweets</h5>
+          <p class="card-text">Top tweets throughout the years</p>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-body">
+          <img src="assets/user.jpg" alt="" class="tweet-img">
+          <div>
+            <span class="card-title tweet-user">Ken Mercado (@haxx0r)</span>
+            <span class="tweet-date">01/28/2017</span>
+          </div>
+          <p class="card-text tweet-msg">We're passionate about making a difference in your skin</p>
+          <div class="tweet-ctrls">
+            <span class="fave">
+              <i class="dripicons-heart"></i>
+              <span class="fav-value">4242</span>
+            </span>
+            <span class="rts">
+              <i class="dripicons-retweet"></i>
+              <span class="retweet-value">5742</span>
+            </span>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-body">
+          <img src="assets/user.jpg" alt="" class="tweet-img">
+          <div>
+            <span class="card-title tweet-user">Ken Mercado (@haxx0r)</span>
+            <span class="tweet-date">01/28/2017</span>
+          </div>
+          <p class="card-text tweet-msg">We're passionate about making a difference in your skin</p>
+          <div class="tweet-ctrls">
+            <span class="fave">
+              <i class="dripicons-heart"></i>
+              <span class="fav-value">4242</span>
+            </span>
+            <span class="rts">
+              <i class="dripicons-retweet"></i>
+              <span class="retweet-value">5742</span>
+            </span>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-body">
+          <img src="assets/user.jpg" alt="" class="tweet-img">
+          <div>
+            <span class="card-title tweet-user">Ken Mercado (@haxx0r)</span>
+            <span class="tweet-date">01/28/2017</span>
+          </div>
+          <p class="card-text tweet-msg">We're passionate about making a difference in your skin</p>
+          <div class="tweet-ctrls">
+            <span class="fave">
+              <i class="dripicons-heart"></i>
+              <span class="fav-value">4242</span>
+            </span>
+            <span class="rts">
+              <i class="dripicons-retweet"></i>
+              <span class="retweet-value">5742</span>
+            </span>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-body">
+          <img src="assets/user.jpg" alt="" class="tweet-img">
+          <div>
+            <span class="card-title tweet-user">Ken Mercado (@haxx0r)</span>
+            <span class="tweet-date">01/28/2017</span>
+          </div>
+          <p class="card-text tweet-msg">We're passionate about making a difference in your skin</p>
+          <div class="tweet-ctrls">
+            <span class="fave">
+              <i class="dripicons-heart"></i>
+              <span class="fav-value">4242</span>
+            </span>
+            <span class="rts">
+              <i class="dripicons-retweet"></i>
+              <span class="retweet-value">5742</span>
+            </span>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-body">
+          <img src="assets/user.jpg" alt="" class="tweet-img">
+          <div>
+            <span class="card-title tweet-user">Ken Mercado (@haxx0r)</span>
+            <span class="tweet-date">01/28/2017</span>
+          </div>
+          <p class="card-text tweet-msg">We're passionate about making a difference in your skin</p>
+          <div class="tweet-ctrls">
+            <span class="fave">
+              <i class="dripicons-heart"></i>
+              <span class="fav-value">4242</span>
+            </span>
+            <span class="rts">
+              <i class="dripicons-retweet"></i>
+              <span class="retweet-value">5742</span>
+            </span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <div class="col-sm-6">
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">Follower Location</h5>
+          <p class="card-text">Beautiful and healthy hair starts today with Pantene.</p>
+          <div id="chart-container">
+            <ngx-charts-pie-chart
+      [view]="view"
+      [scheme]="colorScheme"
+      [results]="data"
+      [legend]="showLegend"
+      [explodeSlices]="explodeSlices"
+      [labels]="showLabels"
+      [doughnut]="doughnut"
+      [gradient]="gradient"
+      (select)="onSelect($event)">
+    </ngx-charts-pie-chart>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

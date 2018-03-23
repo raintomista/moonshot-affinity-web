@@ -9,6 +9,7 @@ import { AdminDashboardComponent } from './admin-dashboard/admin-dashboard.compo
 import { AdminTrainComponent } from './admin-train/admin-train.component';
 import { AnalyzeComponent } from './analyze/analyze.component';
 import { FindComponent } from './find/find.component';
+import { AdminAnalyzeComponent } from './admin-analyze/admin-analyze.component';
 
 const routes: Routes = [
   { path: '', redirectTo: 'dashboard', pathMatch: 'full' },
@@ -28,7 +29,7 @@ const routes: Routes = [
       { path: '', redirectTo: 'train', pathMatch: 'full' },
       { path: 'train', component: AdminTrainComponent },
       { path: 'find', component: FindComponent },
-      { path: 'analyze', component: AnalyzeComponent },
+      { path: 'analyze', component: AdminAnalyzeComponent },
     ]
   }
 
