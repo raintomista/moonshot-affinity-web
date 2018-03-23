@@ -1,0 +1,45 @@
+h1 {
+    margin-bottom: 20px;
+    padding-bottom: 9px;
+    border-bottom: 1px solid #eee;
+}
+
+.nav {
+    background-color: white;
+    height: 65px;
+    line-height: 62px;
+    -webkit-box-shadow: -1px -9px 13px 5px rgba(148, 151, 164, 0.56);
+    box-shadow: -1px -9px 13px 5px rgba(148, 151, 164, 0.56);
+}
+
+.nav-item .nav-link {
+    padding: 0px;
+    margin: 0px 20px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1em;
+    font-weight: 700;
+    color: rgb(163, 162, 162);
+}
+
+.nav-item.active .nav-link {
+    box-sizing: border-box;
+    border-bottom: 3px solid #009FF7;
+    color: black;
+}
+
+.content {
+    margin-top: 65px;
+    padding: 25px 50px;
+    min-height: calc(100vh - 65px);
+    background-color: #EFF0F4;
+}
+
+.profile-dropdown {
+    height: 65px;
+}
+
+.profile-dropdown img {
+    height: 45px;
+    width: 45px;
+    border-radius: 100%;
+}

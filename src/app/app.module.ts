@@ -9,6 +9,7 @@ import { CampaignsComponent } from './campaigns/campaigns.component';
 import { BsDropdownModule } from 'ngx-bootstrap/dropdown';
 import { AnalyticsComponent } from './analytics/analytics.component';
 import { RankingsComponent } from './rankings/rankings.component';
+import { AdminDashboardComponent } from './admin-dashboard/admin-dashboard.component';
 
 
 @NgModule({
@@ -18,7 +19,8 @@ import { RankingsComponent } from './rankings/rankings.component';
     DashboardComponent,
     CampaignsComponent,
     AnalyticsComponent,
-    RankingsComponent
+    RankingsComponent,
+    AdminDashboardComponent
   ],
   imports: [
     BrowserModule,
