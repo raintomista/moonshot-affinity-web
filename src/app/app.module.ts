@@ -6,6 +6,7 @@ import { AppRoutingModule } from './/app-routing.module';
 import { InvitationLoginComponent } from './invitation-login/invitation-login.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { CampaignsComponent } from './campaigns/campaigns.component';
+import { BsDropdownModule } from 'ngx-bootstrap/dropdown';
 
 
 @NgModule({
@@ -17,7 +18,8 @@ import { CampaignsComponent } from './campaigns/campaigns.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    BsDropdownModule.forRoot()
   ],
   providers: [],
   bootstrap: [AppComponent]
