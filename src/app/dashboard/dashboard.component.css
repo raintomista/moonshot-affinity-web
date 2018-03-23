@@ -19,6 +19,7 @@ h1 {
     font-size: 1em;
     font-weight: 700;
     color: rgb(163, 162, 162);
+    cursor: pointer;
 }
 
 .nav-item.active .nav-link {
