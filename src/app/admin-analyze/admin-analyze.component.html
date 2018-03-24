@@ -5,7 +5,7 @@
       <div class="card">
         <div class="card-body">
           <img src="assets/user.jpg" alt="" class="avatar">
-          <h5 class="card-title user-name">{{user.name}}</h5>
+          <h5 class="card-title user-name">{{user.name}} <span class="badge badge-success">{{user.influence}}</span></h5>
           <p class="card-text user-info">{{user.description}}</p>
           <p class="card-text user-location">
             <i class="dripicons-location"></i>
@@ -71,9 +71,8 @@
     </div>
     <div class="col-sm-6">
       <div class="card">
-        <div class="card-body">
+        <div class="card-body ">
           <h5 class="card-title">Follower Location</h5>
-          <p class="card-text">Beautiful and healthy hair starts today with Pantene.</p>
           <div id="chart-container">
             <ngx-charts-pie-chart
       [view]="view"

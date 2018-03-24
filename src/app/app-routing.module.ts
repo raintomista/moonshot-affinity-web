@@ -29,7 +29,7 @@ const routes: Routes = [
       { path: '', redirectTo: 'train', pathMatch: 'full' },
       { path: 'train', component: AdminTrainComponent },
       { path: 'find', component: FindComponent },
-      { path: 'analyze', component: AdminAnalyzeComponent },
+      { path: 'analyze/:username', component: AdminAnalyzeComponent },
     ]
   }
 
