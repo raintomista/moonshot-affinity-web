@@ -4,6 +4,10 @@ import * as _ from "lodash";
 import { HttpClient } from "@angular/common/http";
 import { ActivatedRoute } from "@angular/router";
 
+interface Data {
+  sentiment_dist: Array<any>;
+}
+
 @Component({
   selector: "app-admin-analyze",
   templateUrl: "./admin-analyze.component.html",
@@ -15,11 +19,16 @@ export class AdminAnalyzeComponent implements OnInit {
   data: any[] = [];
 
   view: any[] = [520, 300];
-
+  viewbar: any[] = [520, 300];
+  single: any[]= [];
   // options
   showLegend = true;
 
   colorScheme = {
+    domain: ["#5AA454", "#A10A28", "#C7B42C", "#AAAAAA"]
+  };
+
+  colorSchemeBar = {
     domain: ["#5AA454", "#A10A28", "#C7B42C", "#AAAAAA"]
   };
 
@@ -56,6 +65,25 @@ export class AdminAnalyzeComponent implements OnInit {
         value: 7200000
       }
     ];
+
+    this.single = [
+      {
+        "name": "Clearly Negative",
+        "value": 0
+      },
+      {
+        "name": "Negative",
+        "value": 0
+      },
+      {
+        "name": "Positive",
+        "value": 0
+      },
+      {
+        "name": "Clearly Positive",
+        "value": 0
+      }
+    ];
   }
 
   onSelect(event) {
@@ -65,8 +93,25 @@ export class AdminAnalyzeComponent implements OnInit {
   get(username) {
     this.http
       .get(`http://192.168.43.183:5000/api/get_stats/${username}`)
-      .subscribe(data => {
-        console.log(data);
+      .subscribe((data: Data) => {
+        this.single = [
+          {
+            "name": "Clearly Negative",
+            "value": data.sentiment_dist[0]
+          },
+          {
+            "name": "Negative",
+            "value": data.sentiment_dist[1]
+          },
+          {
+            "name": "Positive",
+            "value": data.sentiment_dist[2]
+          },
+          {
+            "name": "Clearly Positive",
+            "value": data.sentiment_dist[3]
+          }
+        ];
         this.user = data;
       });
   }
