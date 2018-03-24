@@ -10,6 +10,7 @@ import { AdminTrainComponent } from './admin-train/admin-train.component';
 import { AnalyzeComponent } from './analyze/analyze.component';
 import { FindComponent } from './find/find.component';
 import { AdminAnalyzeComponent } from './admin-analyze/admin-analyze.component';
+import { MilestoneComponent } from './milestone/milestone.component';
 
 const routes: Routes = [
   { path: '', redirectTo: 'dashboard', pathMatch: 'full' },
@@ -19,7 +20,7 @@ const routes: Routes = [
     children: [
       { path: '', redirectTo: 'campaigns', pathMatch: 'full' },
       { path: 'campaigns', component: CampaignsComponent },
-      { path: 'analytics', component: AnalyticsComponent },
+      { path: 'milestones', component: MilestoneComponent },
       { path: 'rankings', component: RankingsComponent },
     ]
   },

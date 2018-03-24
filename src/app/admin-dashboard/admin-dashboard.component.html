@@ -22,7 +22,8 @@
             <img src="assets/user.jpg" alt="">
           </a>
           <div *dropdownMenu class="dropdown-menu" aria-labelledby="dropdown01">
-            <a class="dropdown-item" href="#">Switch to User Dashboard</a>
+            <a class="dropdown-item" [routerLink]="['/dashboard/campaigns']" >Switch to User Dashboard</a>
+            <a class="dropdown-item">Logout</a>
           </div>
         </div>
       </div>

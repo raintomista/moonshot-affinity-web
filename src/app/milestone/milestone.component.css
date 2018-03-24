@@ -54,3 +54,7 @@ h4{
     font-size: 13px;
 
 }
+
+.progress-bar{
+    background: linear-gradient(to right, #009ff7, #1AD7CC);
+}

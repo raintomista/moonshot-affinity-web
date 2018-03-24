@@ -22,6 +22,7 @@ import { AdminService } from "./admin.service";
 import { AdminAnalyzeComponent } from "./admin-analyze/admin-analyze.component";
 import { AdminAnalyzeService } from "./services/admin-analyze.service";
 import { FindService } from "./services/find.service";
+import { MilestoneComponent } from './milestone/milestone.component';
 
 @NgModule({
   declarations: [
@@ -35,7 +36,8 @@ import { FindService } from "./services/find.service";
     AdminTrainComponent,
     AnalyzeComponent,
     FindComponent,
-    AdminAnalyzeComponent
+    AdminAnalyzeComponent,
+    MilestoneComponent
   ],
   imports: [
     BrowserModule,

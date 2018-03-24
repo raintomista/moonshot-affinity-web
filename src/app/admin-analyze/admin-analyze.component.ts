@@ -14,7 +14,7 @@ export class AdminAnalyzeComponent implements OnInit {
 
   data: any[] = [];
 
-  view: any[] = [600, 500];
+  view: any[] = [520, 300];
 
   // options
   showLegend = true;
