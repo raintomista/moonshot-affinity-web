@@ -5,8 +5,8 @@
       <div class="card">
         <div class="card-body">
           <img src="assets/user.jpg" alt="" class="avatar">
-          <h5 class="card-title user-name">Ken Mercado (@haxx0r)</h5>
-          <p class="card-text user-info">We're passionate about making a difference in your skin</p>
+          <h5 class="card-title user-name">{{user.name}}</h5>
+          <p class="card-text user-info">{{user.description}}</p>
           <p class="card-text user-location">
             <i class="dripicons-location"></i>
             <span>Los Banos</span>
@@ -20,19 +20,19 @@
         <div class="card-body">
           <h5 class="card-title">Twitter User Metrics</h5>
           <div class="user-value">
-            <span class="count">1,425&nbsp;</span>
+            <span class="count">{{user.retweets_sent}}&nbsp;</span>
             <span class="label">retweets sent</span>
           </div>
           <div class="user-value">
-            <span class="count">643,199&nbsp;</span>
+            <span class="count">{{user.retweets_received}}&nbsp;</span>
             <span class="label">retweets received</span>
           </div>
           <div class="user-value">
-            <span class="count">9,845&nbsp;</span>
+            <span class="count">{{user.mentions_sent}}&nbsp;</span>
             <span class="label">mentions sent</span>
           </div>
           <div class="user-value">
-            <span class="count">44,000&nbsp;</span>
+            <span class="count">{{user.mentions_received}}&nbsp;</span>
             <span class="label">mentions received</span>
           </div>
         </div>
@@ -47,102 +47,22 @@
           <p class="card-text">Top tweets throughout the years</p>
         </div>
       </div>
-      <div class="card">
+      <div class="card" *ngFor="let tweet of user.top_tweets">
         <div class="card-body">
           <img src="assets/user.jpg" alt="" class="tweet-img">
           <div>
-            <span class="card-title tweet-user">Ken Mercado (@haxx0r)</span>
-            <span class="tweet-date">01/28/2017</span>
+            <span class="card-title tweet-user">{{user.name}}</span>
+            <span class="tweet-date">{{tweet.created_at}}</span>
           </div>
-          <p class="card-text tweet-msg">We're passionate about making a difference in your skin</p>
+          <p class="card-text tweet-msg">{{tweet.text}}</p>
           <div class="tweet-ctrls">
             <span class="fave">
               <i class="dripicons-heart"></i>
-              <span class="fav-value">4242</span>
+              <span class="fav-value">{{tweet.favorite_count}}</span>
             </span>
             <span class="rts">
               <i class="dripicons-retweet"></i>
-              <span class="retweet-value">5742</span>
-            </span>
-          </div>
-        </div>
-      </div>
-      <div class="card">
-        <div class="card-body">
-          <img src="assets/user.jpg" alt="" class="tweet-img">
-          <div>
-            <span class="card-title tweet-user">Ken Mercado (@haxx0r)</span>
-            <span class="tweet-date">01/28/2017</span>
-          </div>
-          <p class="card-text tweet-msg">We're passionate about making a difference in your skin</p>
-          <div class="tweet-ctrls">
-            <span class="fave">
-              <i class="dripicons-heart"></i>
-              <span class="fav-value">4242</span>
-            </span>
-            <span class="rts">
-              <i class="dripicons-retweet"></i>
-              <span class="retweet-value">5742</span>
-            </span>
-          </div>
-        </div>
-      </div>
-      <div class="card">
-        <div class="card-body">
-          <img src="assets/user.jpg" alt="" class="tweet-img">
-          <div>
-            <span class="card-title tweet-user">Ken Mercado (@haxx0r)</span>
-            <span class="tweet-date">01/28/2017</span>
-          </div>
-          <p class="card-text tweet-msg">We're passionate about making a difference in your skin</p>
-          <div class="tweet-ctrls">
-            <span class="fave">
-              <i class="dripicons-heart"></i>
-              <span class="fav-value">4242</span>
-            </span>
-            <span class="rts">
-              <i class="dripicons-retweet"></i>
-              <span class="retweet-value">5742</span>
-            </span>
-          </div>
-        </div>
-      </div>
-      <div class="card">
-        <div class="card-body">
-          <img src="assets/user.jpg" alt="" class="tweet-img">
-          <div>
-            <span class="card-title tweet-user">Ken Mercado (@haxx0r)</span>
-            <span class="tweet-date">01/28/2017</span>
-          </div>
-          <p class="card-text tweet-msg">We're passionate about making a difference in your skin</p>
-          <div class="tweet-ctrls">
-            <span class="fave">
-              <i class="dripicons-heart"></i>
-              <span class="fav-value">4242</span>
-            </span>
-            <span class="rts">
-              <i class="dripicons-retweet"></i>
-              <span class="retweet-value">5742</span>
-            </span>
-          </div>
-        </div>
-      </div>
-      <div class="card">
-        <div class="card-body">
-          <img src="assets/user.jpg" alt="" class="tweet-img">
-          <div>
-            <span class="card-title tweet-user">Ken Mercado (@haxx0r)</span>
-            <span class="tweet-date">01/28/2017</span>
-          </div>
-          <p class="card-text tweet-msg">We're passionate about making a difference in your skin</p>
-          <div class="tweet-ctrls">
-            <span class="fave">
-              <i class="dripicons-heart"></i>
-              <span class="fav-value">4242</span>
-            </span>
-            <span class="rts">
-              <i class="dripicons-retweet"></i>
-              <span class="retweet-value">5742</span>
+              <span class="retweet-value">{{tweet.retweet_count}}</span>
             </span>
           </div>
         </div>
