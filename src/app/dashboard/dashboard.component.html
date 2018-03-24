@@ -9,12 +9,6 @@
       <li class="nav-item" [routerLink]="['/dashboard/campaigns']" [routerLinkActive]="'active'">
         <a class="nav-link">Campaigns</a>
       </li>
-      <li class="nav-item" [routerLink]="['/dashboard/rankings']" [routerLinkActive]="'active'">
-        <a class="nav-link">Rankings</a>
-      </li>
-      <!-- <li class="nav-item">
-        <a class="nav-link" href="#">Profile</a>
-      </li> -->
     </ul>
     <div class="navbar-nav profile-dropdown">
       <div class="nav-item dropdown" dropdown>
@@ -22,9 +16,8 @@
           <img src="assets/user.jpg" alt="">
         </a>
         <div *dropdownMenu class="dropdown-menu" aria-labelledby="dropdown01">
-          <a class="dropdown-item" href="#">Action</a>
-          <a class="dropdown-item" href="#">Another action</a>
-          <a class="dropdown-item" href="#">Something else here</a>
+            <a class="dropdown-item" [routerLink]="['/admin-dashboard/train']">Switch to Admin Dashboard</a>
+            <a class="dropdown-item">Logout</a>
         </div>
       </div>
     </div>

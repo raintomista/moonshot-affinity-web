@@ -2,6 +2,7 @@ import { BrowserModule } from "@angular/platform-browser";
 import { NgModule } from "@angular/core";
 import { NgxChartsModule } from "@swimlane/ngx-charts";
 import { HttpClientModule } from "@angular/common/http";
+import { FormsModule } from "@angular/forms";
 
 import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
 import { AppComponent } from "./app.component";
@@ -20,6 +21,7 @@ import { FindComponent } from "./find/find.component";
 import { AdminService } from "./admin.service";
 import { AdminAnalyzeComponent } from "./admin-analyze/admin-analyze.component";
 import { AdminAnalyzeService } from "./services/admin-analyze.service";
+import { FindService } from "./services/find.service";
 import { MilestoneComponent } from './milestone/milestone.component';
 
 @NgModule({
@@ -44,9 +46,10 @@ import { MilestoneComponent } from './milestone/milestone.component';
     NgxChartsModule,
     HttpClientModule,
     BrowserAnimationsModule,
-    BsDropdownModule.forRoot()
+    BsDropdownModule.forRoot(),
+    FormsModule
   ],
-  providers: [AdminService, AdminAnalyzeService],
+  providers: [AdminService, AdminAnalyzeService, FindService],
   bootstrap: [AppComponent]
 })
 export class AppModule {}

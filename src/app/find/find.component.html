@@ -1,3 +1,84 @@
-<div class="">
+<div class="page-container">
+    <h4>Find Users By Potential Influencers</h4>
+    <div class="row">
+        <div class="col-sm-3">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Parameters</h5>
+                    <form #f="ngForm" (ngSubmit)="onSubmitTemplateBased()">
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">Username</label>
+                            <input type="username" class="form-control col-12 text-center" id="exampleInputUsername" aria-describedby="usernameHelp"
+                                placeholder="Enter username" [(ngModel)]="find.username" name="username">
+                        </div>
+                        <div class="form-group">
+                            Minimum Age
+                            <input type="email" class="form-control col-12 text-center " id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Minimum age"
+                                [(ngModel)]="find.min_age" name="min_age">
+                        </div>
+                        <div class="form-group">
+                            Maximum Age
+                            <input type="email" class="form-control col-12 text-center" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Maximum age"
+                                [(ngModel)]="find.max_age" name="max_age">
+                        </div>
+                        <div class="form-group center">
+                            Location
+                            <input type="email" class="form-control col-12 text-center" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter location"
+                                [(ngModel)]="find.location" name="location">
+                        </div>
+                        <div class="form-group text-center">
+                            <button type="submit" class="btn btn-primary col-8">START</button>
+                        </div>
+
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-9">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">List of Users</h5>
+<table class="table">
+    <thead>
+        <tr>
+            <th scope="col">#</th>
+            <th scope="col">First</th>
+            <th scope="col">Last</th>
+            <th scope="col">Handle</th>
+            <th scope="col"></th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <th scope="row">1</th>
+            <td>Mark</td>
+            <td>Otto</td>
+            <td>@mdo</td>
+            <td class="text-center"><button class="btn btn-primary">Analyze</button></td>
+        </tr>
+        <tr>
+            <th scope="row">2</th>
+            <td>Jacob</td>
+            <td>Thornton</td>
+            <td>@fat</td>
+            <td class="text-center"><button class="btn btn-primary">Analyze</button></td>
+        </tr>
+        <tr>
+            <th scope="row">3</th>
+            <td>Larry</td>
+            <td>the Bird</td>
+            <td>@twitter</td>
+            <td class="text-center"><button class="btn btn-primary">Analyze</button></td>
+        </tr>
+    </tbody>
+</table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="text-center">
 
 </div>

@@ -12,7 +12,7 @@
         <li class="nav-item" [routerLink]="['/admin-dashboard/find']" [routerLinkActive]="'active'">
           <a class="nav-link">Find</a>
         </li>
-        <li class="nav-item" [routerLink]="['/admin-dashboard/analyze/jack']" [routerLinkActive]="'active'">
+        <li class="nav-item" [routerLink]="['/admin-dashboard/analyze/bexsnoww']" [routerLinkActive]="'active'">
           <a class="nav-link">Analyze</a>
         </li>
       </ul>
@@ -22,9 +22,8 @@
             <img src="assets/user.jpg" alt="">
           </a>
           <div *dropdownMenu class="dropdown-menu" aria-labelledby="dropdown01">
-            <a class="dropdown-item" href="#">Action</a>
-            <a class="dropdown-item" href="#">Another action</a>
-            <a class="dropdown-item" href="#">Something else here</a>
+            <a class="dropdown-item" [routerLink]="['/dashboard/campaigns']" >Switch to User Dashboard</a>
+            <a class="dropdown-item">Logout</a>
           </div>
         </div>
       </div>
